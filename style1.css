@@ -263,3 +263,74 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
+ .Certification{
+        background: #001233;
+     }
+       
+     .Certification h2{
+        margin-bottom: 4rem;
+     }
+    
+     .Certification-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+     }
+    
+      .Certification-container .Certification-box{
+        position: relative;
+        border-radius: 2rem;
+        box-shadow:0 0 1rem #0ef;
+        overflow: hidden;
+        display: flex;
+      }
+    
+      .Certification-box img{
+        width: 100%;
+        transition: .5s ease;
+      }
+    
+      .Certification-box:hover img{
+          transform: scale(1.1);
+      }
+    
+      .Certification-box .Certification-layer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,.1),#0ef);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         flex-direction: column;
+         text-align: center;
+         padding: 0 4rem;
+         transform: translateY(100%);
+         transition: .5s ease;
+    }
+    
+    .Certification-box:hover .Certification-layer{
+        transform: translateY(0);
+    }
+    .Certification-layer h4{
+        font-size: 2rem;
+    }
+    
+    .Certification-layer a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        background: #ededed;
+        border-radius: 50%;
+    }
+    
+    .Certification-layer a i{
+        font-size: 2rem;
+        color:#001233;
+    }
+    
